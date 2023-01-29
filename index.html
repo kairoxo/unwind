@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Customized style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
+    <script src="js/mdb.min.js"></script>
+    <script src="js/caroussel.js"></script>
+    <title>Unwind | You deserve it</title>
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!-- Sidebar -->
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+            <div class="position-sticky">
+                <div class="list-group list-group-flush mx-3 mt-4">
+                    <a href="index.html" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <i class="fas fa-home fa-fw me-3"></i><span>HOME</span></a>
+                    <a href="what_to_watch.html" class="list-group-item list-group-item-action py-2 ripple">
+                        <i class="fas fa-video fa-fw me-3"></i><span>WATCH A MOVIE</span></a>
+                    <a href="https://unwind-app.vercel.app" class="list-group-item list-group-item-action py-2 ripple"><i
+                            class="fas fa-utensils fa-fw me-3"></i><span>WHAT TO COOK</span></a>
+                    <a href="whattowear.html" class="list-group-item list-group-item-action py-2 ripple"><i
+                            class="fas fa-shirt fa-fw me-3"></i><span>WHAT TO WEAR`</span></a>
+                    <a href="help.html" class="list-group-item list-group-item-action py-2 ripple">
+                        <i class="fas fa-question fa-fw me-3"></i><span>HELP</span>
+                    </a>
+                    <a href="feedbackForm.html" class="list-group-item list-group-item-action py-2 ripple">
+                        <i class="fas fa-comment fa-fw me-3"></i><span>FEEDBACK</span>
+                    </a>
+                </div>
+                
+            </div>
+        </nav>
+        <!-- Sidebar -->
+
+        <!-- Navbar -->
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
+                    aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/unwind.jpg" height="40" alt="MDB Logo" loading="lazy" />
+                </a>
+                <!-- Search form -->
+                <form class="d-none d-md-flex input-group w-auto my-auto">
+                    <input autocomplete="off" type="search" class="form-control rounded" placeholder='Search...'
+                        style="min-width: 225px;" />
+                    <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+            <!-- Container wrapper -->
+            <div id="id4ea040113508a" 
+                a='{"t":"g7bs","v":"1.2","lang":"en","locs":[305],"ssot":"c","sics":"ds","cbkg":"#1976D2","cfnt":"#FFFFFF","cend":"#FFFFFF00","slfs":20,"slis":50}'>
+                Weather Data Source: <a 
+                    href="https://sharpweather.com/weather_france/today/">weather in France today</a></div>
+            <script async src="https://static1.sharpweather.com/widgetjs/?id=id4ea040113508a"></script>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main style="margin-top: 58px;">
+        <div class="container pt-4">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/cinema.jpg" style="width:100%">
+                    <div class="text">Watch what you want</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/petit-dejeuner-copieux-ou-diner-copieux.jpeg" style="width:100%">
+                    <div class="text">Eat what is suitable for you</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/cuisinier.jpg" style="width:100%">
+                    <div class="text">As you want</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/wearing.jpg" style="width:100%">
+                    <div class="text">Wear what you want</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                }
+            </script>
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+</body>
+
+</html>

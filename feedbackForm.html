@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="css/feedbackForm.css" rel="stylesheet">
+    <title>Feedback Form</title>
+    <script type = "text/javascript" src="js/feedbackForm.js"></script>
+   </head>
+
+  <body>
+    <main style="margin-top: 58px;">
+      <div class= "formheader">
+        <div class>
+        <center><h1>Feedback Form</h1></center>
+        </div>
+  
+        <form>
+          <div class ="c"><br>
+          
+          <h2> We value your evaluation for our improvement</h2>
+          <h3>Question 1 : Is this website useful?</h3>
+          <p> <button class="button button1" id="goodbtn1" value="Yes" onclick="ggIpt1()"> Yes </button> or <button class="button button2" id="badbtn1" value="No" onclick="gbIpt1()"> No </button> </p> 
+
+          <h3>Question 2 : Is it easy to navigate through the website? </h3>
+          <p> <button  class="button button1" id="goodbtn2" value="Yes" onclick="ggIpt2()"> Yes </button> or <button class="button button2" id="badbtn2" value="No" onclick="gbIpt2()"> No </button> </p> 
+
+          <h3>Question 3 : Does the website managed to attract your attention? </h3>
+          <p> <button class="button button1" id="goodbtn3" value="Yes" onclick="ggIpt3()"> Yes </button> or <button class="button button2" id="badbtn3" value="No" onclick="gbIpt3()"> No </button> </p>
+
+          <h3>Question 4 : Would you recommend to your friends? </h3>
+          <p> <button class="button button1" id="goodbtn4" value="Yes" onclick="ggIpt4()"> Yes </button> or <button class="button button2" id="badbtn4" value="No" onclick="gbIpt4()"> No </button> </p>
+        
+          <h3>Question 5 : What improvement would you suggest? </h3>
+          <input type="text" id="suggestion" name="suggestion" placeholder="Anything...">
+          <div>
+          <br>
+          <button onclick="getSuggestion()"> Submit </button>
+          <a href="index.html">
+              <button type="button" class="button">Home</button>
+           </a> 
+         </div>
+           
+          </div>
+        </form>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p></p>
+    </footer>
+  </div>  
+  </body>
+
+</html>

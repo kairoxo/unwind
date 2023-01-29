@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Customized style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Extra style -->
+    <link rel="stylesheet" href="css/whattowear.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <script src="js/mdb.min.js"></script>
+    <script src="js/whattowear.js"></script>
+    <title>Unwind | You deserve it</title>
+</head>
+
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!-- Sidebar -->
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+            <div class="position-sticky">
+                <div class="list-group list-group-flush mx-3 mt-4">
+                    <a href="index.html" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <i class="fas fa-home fa-fw me-3"></i><span>HOME</span>
+                    </a>
+                    <a href="what_to_watch.html" class="list-group-item list-group-item-action py-2 ripple">
+                        <i class="fas fa-video fa-fw me-3"></i><span>WATCH A MOVIE</span></a>
+                    <a href="https://unwind-app.vercel.app" class="list-group-item list-group-item-action py-2 ripple"><i
+                            class="fas fa-utensils fa-fw me-3"></i><span>WHAT TO COOK</span></a>
+                    <a href="feedbackForm.html" class="list-group-item list-group-item-action py-2 ripple">
+                        <i class="fas fa-comment fa-fw me-3"></i><span>FEEDBACK</span>
+                    </a>
+                    <br>
+                    <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <button type="button" class="button1" onclick="displayFormal()"> Formal Wear </button>
+                    </div>
+                    <br>
+                    <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <button type="button" class="button1" onclick="displayCasual()"> Casual Wear </button>
+                    </div>
+                    <br>
+                    <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <button type="button" class="button1" onclick="displaySports()"> Sports Wear </button>
+                    </div>
+                    <br><br>
+                    <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <button type="button" class="button3" onclick="history.go(0)"> Clear Choices </button>
+                    </div>
+                    <br><br><br>
+                    <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <a href="https://www.wikihow.com/Put-Together-Outfits">
+                        <center><button type="button" class="button2">More Tips</button><center>
+                        </a> 
+                    </div>
+                    <br>
+                    <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <a href="#">
+                        <center><button type="button" class="button2">Help</button></center>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar -->
+
+        <!-- Navbar -->
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
+                    aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Wardrobe Logo -->
+                <a class="navbar-brand" href="whattowear.html">
+                    <img src="images/wardrobe.jpg" height="40" alt="Wardrobe Logo" loading="lazy" />
+                </a>
+
+                <!-- Search form -->
+                <form class="d-none d-md-flex input-group w-auto my-auto">
+                     <input autocomplete="off" type="search" class="form-control rounded" placeholder='Search...'
+                        style="min-width: 225px;" />
+                    <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+
+            <!-- Container wrapper -->
+            <div id="id4ea040113508a" 
+                a='{"t":"g7bs","v":"1.2","lang":"en","locs":[305],"ssot":"c","sics":"ds","cbkg":"#1976D2","cfnt":"#FFFFFF","cend":"#FFFFFF00","slfs":20,"slis":50}'>
+                Weather Data Source: <a 
+                    href="https://sharpweather.com/weather_france/today/">weather in France today</a></div>
+            <script async src="https://static1.sharpweather.com/widgetjs/?id=id4ea040113508a"></script>
+            <!--Container wrapper -->
+
+        </nav>
+        <!-- Navbar -->
+    </header>
+
+    
+    <!--The Main Display-->
+    <main style="margin-top: 58px;">
+        <div class="container pt-4">
+            <!--Display Wardrobe Picture-->
+            <img src="images/wardrobe1.jpg" style="width:100%">
+
+            <div class="slideshow-container">
+                <!--Formal Wear Slides-->
+                <div class="mySlides fade">
+                    <img src="images/formalwear1.jpg" style="width:20%">
+                    <img src="images/formalwear2.jpg" style="width:23.5%">
+                    <img src="images/formalwear3.jpg" style="width:28%">
+                    <img src="images/formalwear5.jpg" style="width:27.3%">
+                    <img src="images/formalwear6.jpg" style="width:200px;height:420px">
+                    <img src="images/formalwear4.jpg" style="width:235px;height:420px">
+                    <img src="images/formalwear7.jpg" style="width:280px;height:420px">
+                    <img src="images/formalwear8.jpg" style="width:271px;height:420px">
+                </div>
+                <div class="mySlides fade">
+                   <img src="images/formalwear9.jpg" style="width:250px;height:390px">
+                   <img src="images/formalwear10.jpg" style="width:230px;height:390px">
+                   <img src="images/formalwear11.jpg" style="width:230px;height:390px">
+                   <img src="images/formalwear12.jpg" style="width:250px;height:390px">
+                   <img src="images/formalwear13.jpg" style="width:250px;height:390px">
+                   <img src="images/formalwear14.jpg" style="width:230px;height:390px">
+                   <img src="images/formalwear15.jpg" style="width:230px;height:390px">
+                   <img src="images/formalwear16.jpg" style="width:250px;height:390px">
+                </div>
+                <!--End of Formal Wear Slides-->
+            </div>
+
+            <div class="slideshow-container"> 
+                <!--Casual Wear Slides-->
+                <div class="casualSlides fade">
+                    <img src="images/casualwear1.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear2.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear3.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear4.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear5.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear6.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear7.jpg" style="width:240px;height:390px">
+                    <img src="images/casualwear8.jpg" style="width:240px;height:390px">
+                </div>
+                <div class="casualSlides fade">
+                   <img src="images/casualwear9.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear10.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear11.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear12.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear13.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear14.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear15.jpg" style="width:240px;height:390px">
+                   <img src="images/casualwear16.jpg" style="width:240px;height:390px">
+                </div>
+                <!--End of Casual Wear Slides-->
+            </div>
+
+            <div class="slideshow-container">
+                <!--Sports Wear Slides-->
+                <div class="sportsSlides fade">
+                    <img src="images/sportswear1.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear2.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear3.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear4.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear5.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear6.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear7.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear8.jpg" style="width:240px;height:390px">
+                </div>
+                <div class="sportsSlides fade">
+                    <img src="images/sportswear9.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear10.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear11.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear12.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear13.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear14.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear15.jpg" style="width:240px;height:390px">
+                    <img src="images/sportswear16.jpg" style="width:240px;height:390px">
+                </div>
+                <!-- End of Sports Wear Slides-->
+            </div>
+            
+            <!--Dots-->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>   
+            <!--Dots-->
+
+        </div>
+
+    </main>
+    <!--End of Main Display-->
+</body>
+
+
+</html>
