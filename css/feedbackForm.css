@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+.c {  
+  color:black;
+  border-color: black;
+  background-color:lightgray;
+  height : 600px;
+  text-align: center;
+
+}
+
+h1 {
+  text-shadow:3px 2px black;
+  color:white;
+}
+    
+.formheader {
+  background-color: dodgerblue;
+  position: center;
+} 
+    .button1{
+      display: inline-block;
+      padding: 5px 15px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      color:white;
+      background-color:lightskyblue;
+      border-radius: 15px;
+      box-shadow: 0 7px #999;
+    }
+    .button1:hover{
+      background-color: blue;
+      color: black;
+    }
+    .button2{
+      display: inline-block;
+      padding: 5px 15px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      color:white;
+      background-color:indianred;
+      border-radius: 15px;
+      box-shadow: 0 7px #999;
+    }
+    .button2:hover{
+      background-color: darkred;
+      color: black;
+    }
